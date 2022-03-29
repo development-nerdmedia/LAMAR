@@ -11,7 +11,9 @@
     <header>
       <nav class="container">
         <div class="nav1">
-          <div class="logo"><img src="img/logo.png" alt="logo" /></div>
+          <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="logo" /></a>
+          </div>
           <div class="info">
             <button>Contáctenos</button>
             <ul>
@@ -26,8 +28,21 @@
         </div>
         <div class="nav2">
           <ul>
-            <li><a href="#">¿Quiénes somos?</a></li>
-            <li><a href="#">Servicios</a></li>
+            <li><a href="pages/quienes-somos.html">¿Quiénes somos?</a></li>
+            <li class="fex">
+              <a href="pages/servicios.html">Servicios</a>
+              <ul id="menu" class="submenu">
+                <li><a href="#">Contrucción Civil</a></li>
+                <li><a href="#">Terminaciones y obras húmedas</a></li>
+                <li>
+                  <a href="#"
+                    >Data instalación de equipos - Aire acondicionado</a
+                  >
+                </li>
+                <li><a href="#">Instalaciones eléctricas</a></li>
+                <li><a href="#">Instalaciones de agua y contraincendio </a></li>
+              </ul>
+            </li>
             <li><a href="#">Proyectos</a></li>
             <li><a href="#">Noticias</a></li>
           </ul>
@@ -47,9 +62,11 @@
           ></video>
         </div>
         <div class="container1 content">
-          <h1>Especialistas en obras de construcción</h1>
-          <p>Para proyectos de todo tipo de embergadura</p>
-          <img src="icons/hexagono.svg" alt="" />
+          <div class="text">
+            <h1>Especialistas en obras de construcción</h1>
+            <p>Para proyectos de todo tipo de embergadura</p>
+            <img src="icons/hexagono.svg" alt="" />
+          </div>
         </div>
         <div class="flecha">
           <img src="icons/hexagono+flecha.svg" alt="" />
@@ -143,42 +160,44 @@
       <section class="slider">
         <div class="marquee">
           <ul class="marquee-content">
-            <li>12 años de experiencia en construcción e ingeniería civil</li>
-            <li>12 años de experiencia en construcción e ingeniería civil</li>
+            <li>- 12 años de experiencia en construcción e ingeniería civil</li>
+            <li>- 12 años de experiencia en construcción e ingeniería civil</li>
           </ul>
         </div>
       </section>
-      <footer>
-        <div class="footer1">
-          <div class="container">
-            <div class="content">
-              <div class="text">
-                <p>Jr. Maxwell Jacobo 150 P-36 11 Urb. Pacífico - S.M.P</p>
-                <p>warista@consorciolamarsac.com</p>
-                <p>+ 01 606 1238</p>
-              </div>
-              <div class="redes">
-                <a href="#"><img src="icons/facebook.svg" alt="" />Facebook</a>
-                <a href="#"><img src="icons/LinkedIn.svg" alt="" />LinkedIn</a>
-                <a href="#"><img src="icons/twitter.svg" alt="" />Twitter</a>
-              </div>
-              <img src="img/logo-footer.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="pie">
-            <p>2022 Todos lo derechos reservados</p>
-            <p>Hecha con amor - NERD</p>
-          </div>
-        </div>
-      </footer>
     </main>
-    <footer></footer>
+
+    <footer>
+      <div class="footer1">
+        <div class="container">
+          <div class="content">
+            <div class="text">
+              <p>Jr. Maxwell Jacobo 150 P-36 11 Urb. Pacífico - S.M.P</p>
+              <p>warista@consorciolamarsac.com</p>
+              <p>+ 01 606 1238</p>
+            </div>
+            <div class="redes">
+              <a href="#"><img src="icons/facebook.svg" alt="" />Facebook</a>
+              <a href="#"><img src="icons/LinkedIn.svg" alt="" />LinkedIn</a>
+              <a href="#"><img src="icons/twitter.svg" alt="" />Twitter</a>
+            </div>
+            <img src="img/logo-footer.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="pie">
+          <p>2022 Todos lo derechos reservados</p>
+          <p>Hecha con amor - NERD</p>
+        </div>
+      </div>
+    </footer>
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
     ></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
