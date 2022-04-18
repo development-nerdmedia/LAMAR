@@ -11,9 +11,15 @@
     <header>
       <nav class="container">
         <div class="nav1">
-          <a href="../index.html"><img src="../img/logo.png" alt="logo" /></a>
+          <div class="logo">
+            <a href="../index.html"><img src="../img/logo.png" alt="logo" /></a>
+          </div>
+          <img class="icon-menu" src="../icons/menú.svg" alt="" />
           <div class="info">
-            <button>Contáctenos</button>
+            <!-- <button class="contacto-page">Contáctenos</button> -->
+            <a class="btncontacto" href="contacto.html"
+              >Contáctenos<img src="../icons/flecha1.svg" alt=""
+            /></a>
             <ul>
               <li class="idioma">
                 <a href="#"> EN <img src="../icons/flecha.svg" alt="↓" /></a>
@@ -32,29 +38,212 @@
             <li class="fex">
               <a href="servicios.html">Servicios</a>
               <ul id="menu" class="submenu">
-                <li><a href="#">Contrucción Civil</a></li>
-                <li><a href="#">Terminaciones y obras húmedas</a></li>
+                <li><a href="construccion-civil.html">Contrucción Civil</a></li>
                 <li>
-                  <a href="#"
-                    >Data instalación de equipos - Aire acondicionado</a
+                  <a href="Terminaciones-y-obras-húmedas.html"
+                    >Terminaciones y obras húmedas</a
                   >
                 </li>
-                <li><a href="#">Instalaciones eléctricas</a></li>
-                <li><a href="#">Instalaciones de agua y contraincendio </a></li>
+                <li>
+                  <a href="HVAC.html">HVAC</a>
+                </li>
+                <li>
+                  <a href="Instalaciones-electricas.html"
+                    >Instalaciones eléctricas</a
+                  >
+                </li>
+                <li>
+                  <a href="instalaciones-de-agua-y-contraincendio.html"
+                    >Instalaciones de agua y contraincendio
+                  </a>
+                </li>
+                <li>
+                  <a href="Data-instalación-de-equipos-Aire-acondicionado.html"
+                    >Data instalación de equipos</a
+                  >
+                </li>
+                <li>
+                  <a href="estructuras-metalicas.html">Estructuras Metálicas</a>
+                </li>
+                <li>
+                  <a href="instalaciones-sanitarias.html"
+                    >Instalaciones Sanitarias</a
+                  >
+                </li>
               </ul>
             </li>
-            <li><a href="#">Proyectos</a></li>
-            <li><a href="#">Noticias</a></li>
+            <li>
+              <a href="proyectos.html">Proyectos</a>
+            </li>
+            <li><a href="noticias.html">Noticias</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
+      <!-- modal contacto -->
+      <!-- <section class="contactopage">
+        <div class="container">
+          <div class="cerrar">
+            <button class="contacto-page">
+              <img src="../icons/hexagono-cruz.svg" alt="" />
+            </button>
+          </div>
+          <div class="content">
+            <div class="content-formulario">
+              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+              <form
+                id="fs-frm2"
+                name="complaint-form"
+                accept-charset="utf-8"
+                action="thanks.html"
+                method=""
+                class="formulario containerform"
+              >
+                <fieldset id="fs-frm-inputs2">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      id="full-name"
+                      placeholder=""
+                      required=""
+                      class="form-input"
+                    />
+                    <label for="form-nombre" class="form-label"
+                      >Nombres y Apellidos:</label
+                    >
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder=""
+                      required=""
+                      class="form-input"
+                    />
+                    <label for="form-nombre" class="form-label">Correo:</label>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="asunto"
+                      id="asunto"
+                      placeholder=""
+                      required=""
+                      class="form-input"
+                    />
+                    <label for="form-nombre" class="form-label">Asunto:</label>
+                  </div>
+                  <div class="form-group textarea">
+                    <textarea
+                      rows="6"
+                      name="message"
+                      id="message"
+                      placeholder=""
+                      required=""
+                      class="form-input textarea"
+                    ></textarea>
+                    <label for="form-nombre" class="form-label">Mensaje:</label>
+                  </div>
+                  <div class="enviar">
+                    <input type="submit" value="Enviar" />
+                    <img src="../icons/flecha1.svg" alt="" />
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="pie">
+            <ul>
+              <li>Av.xxxxxxx .Lima, Perú</li>
+              <li>+01 5685967</li>
+              <li>Atención: L-V: 00:00</li>
+              <li>lamar@consorcio.pe</li>
+            </ul>
+          </div>
+        </div>
+      </section> -->
+      <!-- end modal contacto -->
+      <!-- modal menú -->
+      <section class="menupage">
+        <div class="container">
+          <div class="cerrar">
+            <a href="../index.html"><img src="../img/logo.png" alt="" /></a>
+            <button class="icon-menu">
+              <img src="../icons/hexagonorojo-cruz.svg" alt="" />
+            </button>
+          </div>
+          <div class="content">
+            <ul>
+              <li>
+                <a href="quienes-somos.html">¿Quiénes somos?</a>
+              </li>
+              <li class="container-submenu">
+                <a href="servicios.html">Servicios</a
+                ><img
+                  class="submenu-btn"
+                  src="../icons/flecha-menu.svg"
+                  alt=""
+                />
+                <ul class="submenu-movil">
+                  <li>
+                    <a href="construccion-civil.html">Construcción Civil</a>
+                  </li>
+                  <li>
+                    <a href="Terminaciones-y-obras-húmedas.html"
+                      >TERMINACIONES Y OBRAS HÚMEDAS</a
+                    >
+                  </li>
+                  <li><a href="HVAC.html">HVAC</a></li>
+                  <li>
+                    <a href="instalaciones-de-agua-y-contraincendio.html"
+                      >Instalaciones eléctricas</a
+                    >
+                  </li>
+                  <li>
+                    <a href="instalaciones-de-agua-y-contraincendio.html"
+                      >Instalaciones de agua y contraincendio
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="Data-instalación-de-equipos-Aire-acondicionado.html"
+                      >Data instalación de equipos</a
+                    >
+                  </li>
+                  <li>
+                    <a href="estructuras-metalicas.html"
+                      >Estructuras Metálicas</a
+                    >
+                  </li>
+                  <li>
+                    <a href="instalaciones-sanitarias.html"
+                      >Instalaciones Sanitarias</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li><a href="proyectos.html">Proyectos</a></li>
+              <li><a href="noticias.html">Noticias</a></li>
+            </ul>
+            <a class="contact" href="contacto.html">contáctanos</a>
+          </div>
+        </div>
+      </section>
+      <!-- end modal menú -->
       <section class="title-nosotros">
-        <!-- <img src="../img/banner-nosotros.png" alt="" /> -->
-        <div class="content-title">
+        <div class="banner">
+          <div class="filtro-black"></div>
+          <img class="bannerimg" src="../img/banner-nosotros.jpg" alt="" />
           <div class="container">
-            <h1>consorcio lamar</h1>
+            <div class="title-content">
+              <h1>
+                consorcio <br />
+                lamar
+              </h1>
+            </div>
           </div>
         </div>
       </section>
@@ -62,30 +251,27 @@
         <div class="container">
           <div class="content">
             <div class="part1">
-              <img src="../img/hombre.png" alt="" />
+              <img src="../img/hombre3.png" alt="" />
             </div>
             <div class="part2">
               <p>
-                Es una empresa dedicada a la Ejecución de Obras Completas y
-                Servicios Generales; Empresa Peruana, orientada siempre a
-                brindar calidad para la satisfacción de sus clientes con nuevas
-                Tecnologías y Capacitación en Infraestructura, Ingeniería Civil
-                y Arquitectura. Fundada en el año 2010 y constituida en el año
-                2013 bajo los estatus del Estado Peruano, con el objeto de
-                trascender en el ámbito del desarrollo de Obras Civiles.
+                Consorcio Lamar está sostenido por la puntualidad de sus
+                trabajos e innovación constante, lo que aunado a la eficiente
+                capacidad de nuestro equipo de trabajo nos ha permitido destacar
+                en un mercado altamente competitivo; con ello garantizamos la
+                satisfacción de las más altas expectativas y estándares.
               </p>
               <p>
-                Buscan un crecimiento sostenible, perfeccionando nuevas técnicas
-                en la construcción para conseguir la satisfacción de los
-                clientes en base a la seguridad y calidad en sus proyectos. El
-                fortalecimiento de Lamar está sostenido por la puntualidad de
-                sus trabajos e innovación constante, lo que aunado a la
-                eficiente capacidad de nuestro equipo de trabajo nos ha
-                permitido destacar en un mercado altamente competitivo; con ello
-                garantizamos la satisfacción de las más altas expectativas y
-                estándares. Es así que, con el compromiso y motivación
-                contribuyen en mejorar el desarrollo de la sociedad y de la
-                economía nacional.
+                Desde nuestro inicio venimos trabajando con el objetivo de
+                construír un mejor futuro para más peruanos. Formamos grupos de
+                trabajo altamente capacitados en el sector inmobiliario para
+                brindar soluciones integrales a la demanda de nuestros clientes.
+              </p>
+              <p>
+                Nuestros proyectos son evidencia de la experiencia que hemos
+                adquirido en estos años. Queremos seguir siendo parte de la
+                historia como una inmobiliaria involucrada en el desarrollo
+                infraestructural y social de nuestro país.
               </p>
             </div>
           </div>
@@ -98,28 +284,44 @@
               <div class="mision">
                 <h2>Misión</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu
-                  vestibulum amet, vitae consectetur. Aliquet quis viverra
-                  fermentum fermentum augue.
+                  Buscamos ser una inmobiliaria innovadora, de jerarquía
+                  internacional, Además, queremos ser sinónimo de calidad en
+                  cada proyecto que realicemos.
                 </p>
               </div>
               <div class="vision">
                 <h2>Visión</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu
-                  vestibulum amet, vitae consectetur. Aliquet quis viverra
-                  fermentum fermentum augue.
+                  Contribuir al desarrollo de nuestro país elaborando proyectos
+                  de calidad con sentido social.
                 </p>
               </div>
             </div>
           </div>
-
-          <img src="../img/nosotros2.png" alt="" />
+          <div class="content-img">
+            <img src="../img/equipo.png" alt="" />
+            <div class="filtro"></div>
+            <img src="../img/nosotros11.png" alt="" />
+          </div>
+          <!-- <div class="contenedor-img">
+            <span class="span1"></span>
+            <span class="span2"></span>
+            <img src="../img/nosotros1.png" alt="" />
+          </div> -->
         </div>
       </section>
       <section class="valores">
         <div class="content">
-          <img src="../img/nosotros3.png" alt="" />
+          <div class="content-img">
+            <img src="../img/valores-img.png" alt="" />
+            <div class="filtro"></div>
+            <img src="../img/nosotros3.png" alt="" />
+          </div>
+          <!-- <div class="contenedor-img">
+            <span class="span1"></span>
+            <span class="span2"></span>
+            <img src="../img/nosotros2-1.png" alt="" />
+          </div> -->
           <div class="text">
             <div class="container">
               <h2>Valores</h2>
@@ -132,9 +334,9 @@
                   <div>
                     <h3>Confianza</h3>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Arcu vestibulum amet, vitae consectetur. Aliquet quis
-                      viverra fermentum fermentum augue.
+                      La calidad profesional de nuestros especialistas es
+                      priomordial, pues es la única forma de brindar la
+                      confianza necesaria para llevar a cabo un proyecto.
                     </p>
                   </div>
                 </div>
@@ -146,9 +348,9 @@
                   <div>
                     <h3>Liderazgo</h3>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Arcu vestibulum amet, vitae consectetur. Aliquet quis
-                      viverra fermentum fermentum augue.
+                      Nuestros líderes buscan crecer profesionalmente para
+                      brindar soluciones a los principales problemas de nuestra
+                      sociedad.
                     </p>
                   </div>
                 </div>
@@ -160,9 +362,9 @@
                   <div>
                     <h3>Trabajo en equipo</h3>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Arcu vestibulum amet, vitae consectetur. Aliquet quis
-                      viverra fermentum fermentum augue.
+                      Logramos consolidar un buen equipo de trabajo con el
+                      objetivo de fortalecer el desarrollo de nuestros
+                      proyectos.
                     </p>
                   </div>
                 </div>
@@ -174,22 +376,89 @@
       <section class="history">
         <div class="container">
           <div class="content">
-            <div class="part1">
+            <div class="part1 historytext">
               <h2>historia</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu
-                vestibulum amet, vitae consectetur. Aliquet quis viverra
-                fermentum fermentum augue.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu
-                vestibulum amet, vitae consectetur. Aliquet quis viverra
-                fermentum fermentum augue.
-              </p>
+              <div class="content-text">
+                <div position="1" class="text active">
+                  <p>
+                    Consorcio Lamar fue fundado en el año 2010 y se constituyó
+                    en el año 2013 bajo los estatus del Estado peruano.
+                  </p>
+                  <p>
+                    Desde entonces, empezamos nuestro recorrido elaborando
+                    proyectos de gran beneficio para nuestra sociedad.
+                  </p>
+                </div>
+                <div position="2" class="text">
+                  <p>
+                    2012 Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Quis impedit atque dignissimos est odio neque! Dicta
+                    aut iusto et labore quae exercitationem
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nihil numquam eum repellat a enim
+                  </p>
+                </div>
+                <div position="3" class="text">
+                  <p>
+                    2014 Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Quis impedit atque dignissimos est odio neque! Dicta
+                    aut iusto et labore quae exercitationem
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Nihil numquam eum repellat a enim
+                  </p>
+                </div>
+              </div>
+
+              <div class="buttonsHistory">
+                <button position="3" class="prev-buttonsHistory">
+                  <img src="../icons/btn-izquierda.svg" alt="" />
+                </button>
+                <button position="2" class="next-buttonsHistory">
+                  <img src="../icons/btn-derecha.svg" alt="" />
+                </button>
+              </div>
+              <!-- <div class="contenido-texto">
+                <p>
+                  Consorcio Lamar fue fundado en el año 2010 y se constituyó en
+                  el año 2013 bajo los estatus del Estado peruano.
+                </p>
+                <p>
+                  Desde entonces, empezamos nuestro recorrido elaborando
+                  proyectos de gran beneficio para nuestra sociedad.
+                </p>
+                <p>
+                  2012 Consorcio Lamar fue fundado en el año 2010 y se
+                  constituyó en el año 2013 bajo los estatus del Estado peruano.
+                </p>
+                <p>
+                  Desde entonces, empezamos nuestro recorrido elaborando
+                  proyectos de gran beneficio para nuestra sociedad.
+                </p>
+                <p>
+                  2014 Consorcio Lamar fue fundado en el año 2010 y se
+                  constituyó en el año 2013 bajo los estatus del Estado peruano.
+                </p>
+                <p>
+                  Desde entonces, empezamos nuestro recorrido elaborando
+                  proyectos de gran beneficio para nuestra sociedad.
+                </p>
+              </div> -->
             </div>
             <div class="part2">
-              <h3>2010</h3>
-              <img src="../icons/hexagono3.svg" alt="" />
+              <aside class="años">
+                <h3 position="1" class="active">2010</h3>
+                <h3 position="2">2012</h3>
+                <h3 position="3">2014</h3>
+                <img src="../icons/hexagono3.svg" alt="" />
+              </aside>
+              <!-- <div class="content-años">
+                <h3>2010</h3>
+                <img src="../icons/hexagono3.svg" alt="" />
+              </div> -->
             </div>
           </div>
         </div>
@@ -197,8 +466,8 @@
       <section class="slider">
         <div class="marquee">
           <ul class="marquee-content">
-            <li>- 12 años de experiencia en construcción e ingeniería civil</li>
-            <li>- 12 años de experiencia en construcción e ingeniería civil</li>
+            <li>- 8 años de experiencia en construcción e ingeniería civil</li>
+            <li>- 8 años de experiencia en construcción e ingeniería civil</li>
           </ul>
         </div>
       </section>
@@ -208,16 +477,27 @@
         <div class="container">
           <div class="content">
             <div class="text">
-              <p>Jr. Maxwell Jacobo 150 P-36 11 Urb. Pacífico - S.M.P</p>
-              <p>warista@consorciolamarsac.com</p>
-              <p>+ 01 606 1238</p>
+              <p>Calle Abutillon 3889 urb. Las Palmeras - Los olivos</p>
+              <p>jbanda@consorciolamarsac.com</p>
+              <p>+51 954 910 703</p>
             </div>
             <div class="redes">
-              <a href="#"><img src="../icons/facebook.svg" alt="" />Facebook</a>
-              <a href="#"><img src="../icons/LinkedIn.svg" alt="" />LinkedIn</a>
-              <a href="#"><img src="../icons/twitter.svg" alt="" />Twitter</a>
+              <a href="#"
+                ><img src="../icons/facebook.svg" alt="" />
+                <p>Facebook</p></a
+              >
+              <a href="#"
+                ><img src="../icons/LinkedIn.svg" alt="" />
+                <p>LinkedIn</p></a
+              >
+              <a href="#"
+                ><img src="../icons/twitter.svg" alt="" />
+                <p>Twitter</p></a
+              >
             </div>
-            <img src="../img/logo-footer.png" alt="" />
+            <div class="logo">
+              <img src="../img/logo-footer.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
@@ -234,6 +514,11 @@
     ></script>
     <script src="../js/gsap.min.js"></script>
     <script src="../js/ScrollTrigger.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
     <script src="../js/main.js"></script>
   </body>
 </html>
