@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png" />
     <link rel="stylesheet" type="text/css" href="../slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
     <title>LAMAR - Servicios</title>
   </head>
@@ -14,11 +16,12 @@
       <nav class="container">
         <div class="nav1">
           <div class="logo">
-            <a href="../index.html"><img src="../img/logo.png" alt="logo" /></a>
+            <a href="../index.html"
+              ><img src="../icons/logolamar.svg" alt=""
+            /></a>
           </div>
           <img class="icon-menu" src="../icons/menú.svg" alt="" />
           <div class="info">
-            <!-- <button class="contacto-page">Contáctenos</button> -->
             <a class="btncontacto" href="contacto.html"
               >Contáctenos<img src="../icons/flecha1.svg" alt=""
             /></a>
@@ -60,7 +63,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="Data-instalación-de-equipos-Aire-acondicionado.html"
+                  <a href="Data-instalación-de-equipos.html"
                     >Data instalación de equipos</a
                   >
                 </li>
@@ -83,96 +86,18 @@
       </nav>
     </header>
     <main>
-      <!-- modal contacto -->
-      <!-- <section class="contactopage">
-        <div class="container">
-          <div class="cerrar">
-            <button class="contacto-page">
-              <img src="../icons/hexagono-cruz.svg" alt="" />
-            </button>
-          </div>
-          <div class="content">
-            <div class="content-formulario">
-              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-              <form
-                id="fs-frm2"
-                name="complaint-form"
-                accept-charset="utf-8"
-                action="thanks.html"
-                method=""
-                class="formulario containerform"
-              >
-                <fieldset id="fs-frm-inputs2">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name="name"
-                      id="full-name"
-                      placeholder=""
-                      required=""
-                      class="form-input"
-                    />
-                    <label for="form-nombre" class="form-label"
-                      >Nombres y Apellidos:</label
-                    >
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder=""
-                      required=""
-                      class="form-input"
-                    />
-                    <label for="form-nombre" class="form-label">Correo:</label>
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name="asunto"
-                      id="asunto"
-                      placeholder=""
-                      required=""
-                      class="form-input"
-                    />
-                    <label for="form-nombre" class="form-label">Asunto:</label>
-                  </div>
-                  <div class="form-group textarea">
-                    <textarea
-                      rows="6"
-                      name="message"
-                      id="message"
-                      placeholder=""
-                      required=""
-                      class="form-input textarea"
-                    ></textarea>
-                    <label for="form-nombre" class="form-label">Mensaje:</label>
-                  </div>
-                  <div class="enviar">
-                    <input type="submit" value="Enviar" />
-                    <img src="../icons/flecha1.svg" alt="" />
-                  </div>
-                </fieldset>
-              </form>
-            </div>
-          </div>
-          <div class="pie">
-            <ul>
-              <li>Av.xxxxxxx .Lima, Perú</li>
-              <li>+01 5685967</li>
-              <li>Atención: L-V: 00:00</li>
-              <li>lamar@consorcio.pe</li>
-            </ul>
-          </div>
-        </div>
-      </section> -->
-      <!-- end modal contacto -->
+      <!-- loading page -->
+      <section class="loadingpage">
+        <div id="loading"></div>
+      </section>
+      <!-- end loading page -->
       <!-- modal menú -->
       <section class="menupage">
         <div class="container">
           <div class="cerrar">
-            <a href="../index.html"><img src="../img/logo.png" alt="" /></a>
+            <a href="../index.html"
+              ><img src="../icons/logolamar.svg" alt=""
+            /></a>
             <button class="icon-menu">
               <img src="../icons/hexagonorojo-cruz.svg" alt="" />
             </button>
@@ -182,13 +107,12 @@
               <li>
                 <a href="quienes-somos.html">¿Quiénes somos?</a>
               </li>
-              <li class="container-submenu">
-                <a href="servicios.html">Servicios</a
-                ><img
-                  class="submenu-btn"
-                  src="../icons/flecha-menu.svg"
-                  alt=""
-                />
+              <li class="container-submenu select">
+                <a href="servicios.html">Servicios</a>
+                <span class="submenu-btn">
+                  <img src="../icons/flecha-menu.svg" alt="" />
+                  <img src="../icons/flecha-menu2.svg" alt="" />
+                </span>
                 <ul class="submenu-movil">
                   <li>
                     <a href="construccion-civil.html">Construcción Civil</a>
@@ -200,7 +124,7 @@
                   </li>
                   <li><a href="HVAC.html">HVAC</a></li>
                   <li>
-                    <a href="instalaciones-de-agua-y-contraincendio.html"
+                    <a href="Instalaciones-electricas.html"
                       >Instalaciones eléctricas</a
                     >
                   </li>
@@ -210,8 +134,7 @@
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="Data-instalación-de-equipos-Aire-acondicionado.html"
+                    <a href="Data-instalación-de-equipos.html"
                       >Data instalación de equipos</a
                     >
                   </li>
@@ -248,109 +171,228 @@
             </div>
           </div>
         </div>
-        <!-- <div class="content-title">
-          <div class="container">
-            <h1>NUESTROS SERVICIOS</h1>
-          </div>
-        </div> -->
       </section>
 
       <section class="servicios">
         <div class="container">
           <div class="items">
-            <div class="item">
-              <div class="filtro"></div>
-              <img src="../img/construccion civil.jpg" alt="" />
-              <div class="info">
-                <p>Construcción civil</p>
-                <a href="construccion-civil.html">
-                  <img src="../icons/flecha-hexagono.svg" alt=""
-                /></a>
-              </div>
+            <div
+              class="item"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
+              <a href="construccion-civil.html">
+                <div class="filtro"></div>
+                <img src="../img/construccion civil.jpg" alt="" />
+                <div class="info">
+                  <p>
+                    Construcción <br />
+                    civil
+                  </p>
+                </div>
+                <div class="pantalla-hover">
+                  <p>
+                    Construcción <br />
+                    civil
+                  </p>
+                  <p>
+                    Dirigimos y ejecutamos diferentes obras de edificación civil
+                    e infraestructura vial.
+                  </p>
+                </div>
+              </a>
             </div>
-            <div class="item">
-              <div class="filtro"></div>
-              <img src="../img/Terminaciones_y_obras_humedas.jpg" alt="" />
-              <div class="info">
-                <p>Terminaciones y obras húmedas</p>
-                <a href="Terminaciones-y-obras-húmedas.html">
-                  <img src="../icons/flecha-hexagono.svg" alt=""
-                /></a>
-              </div>
+            <div
+              class="item"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
+              <a href="Terminaciones-y-obras-húmedas.html">
+                <div class="filtro"></div>
+                <img src="../img/Terminaciones_y_obras_humedas.jpg" alt="" />
+                <div class="info">
+                  <p>Terminaciones y obras húmedas</p>
+                </div>
+                <div class="pantalla-hover">
+                  <p>Terminaciones y obras húmedas</p>
+                  <p>
+                    Somos especialistas en la creación, fabricación y
+                    comercialización de todo tipo de muebles
+                  </p>
+                </div>
+              </a>
             </div>
-            <div class="item">
-              <div class="filtro"></div>
-              <img src="../img/hvac.jpg" alt="" />
-              <div class="info">
-                <p>HVAC</p>
-                <a href="HVAC.html">
-                  <img src="../icons/flecha-hexagono.svg" alt=""
-                /></a>
-              </div>
+            <div
+              class="item"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
+              <a href="HVAC.html">
+                <div class="filtro"></div>
+                <img src="../img/hvac.jpg" alt="" />
+                <div class="info">
+                  <p>HVAC</p>
+                </div>
+                <div class="pantalla-hover">
+                  <p>HVAC</p>
+                  <p>
+                    En Consorcio Lamar diseñamos e instalamos sistemas de HVAC.
+                  </p>
+                </div>
+              </a>
             </div>
-            <div class="item">
-              <div class="filtro"></div>
-              <img src="../img/Intalaciones electricas.jpg" alt="" />
-              <div class="info">
-                <p>Instalaciones eléctricas</p>
-                <a href="Instalaciones-electricas.html">
-                  <img src="../icons/flecha-hexagono.svg" alt=""
-                /></a>
-              </div>
+            <div
+              class="item"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
+              <a href="Instalaciones-electricas.html">
+                <div class="filtro"></div>
+                <img src="../img/Intalaciones electricas.jpg" alt="" />
+                <div class="info">
+                  <p>
+                    Instalaciones <br />
+                    eléctricas
+                  </p>
+                </div>
+                <div class="pantalla-hover">
+                  <p>
+                    Instalaciones <br />
+                    eléctricas
+                  </p>
+                  <p>
+                    Instalamos y brindamos servicios de electricidad y cableado
+                    estructurado en diferentes superficies.
+                  </p>
+                </div>
+              </a>
             </div>
-            <div class="item">
-              <div class="filtro"></div>
-              <img src="../img/contraincendio.jpg" alt="" />
-              <div class="info">
-                <p>Instalaciones de agua y contraincendio</p>
-                <a href="instalaciones-de-agua-y-contraincendio.html">
-                  <img src="../icons/flecha-hexagono.svg" alt=""
-                /></a>
-              </div>
+            <div
+              class="item"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
+              <a href="instalaciones-de-agua-y-contraincendio.html">
+                <div class="filtro"></div>
+                <img src="../img/contraincendio.jpg" alt="" />
+                <div class="info">
+                  <p>Instalaciones de agua y contraincendio</p>
+                </div>
+                <div class="pantalla-hover">
+                  <p>Instalaciones de agua y contraincendio</p>
+                  <p>
+                    Realizamos el planeamiento de almacenamiento y distribución
+                    de agua hasta puntos cercanos a las zonas habitadas para su
+                    uso.
+                  </p>
+                </div>
+              </a>
             </div>
-            <div class="item">
-              <div class="filtro"></div>
-              <img src="../img/data instalación de eqipos.jpg" alt="" />
-              <div class="info">
-                <p>Data instalación de equipos</p>
-                <a href="Data-instalación-de-equipos-Aire-acondicionado.html">
-                  <img src="../icons/flecha-hexagono.svg" alt=""
-                /></a>
-              </div>
+            <div
+              class="item"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
+              <a href="Data-instalación-de-equipos-Aire-acondicionado.html">
+                <div class="filtro"></div>
+                <img src="../img/data instalación de eqipos.jpg" alt="" />
+                <div class="info">
+                  <p>
+                    Data instalación <br />
+                    de equipos
+                  </p>
+                </div>
+                <div class="pantalla-hover">
+                  <p>
+                    Data instalación <br />
+                    de equipos
+                  </p>
+                  <p>
+                    Realizamos instalaciones de cableado estructurado de voz y
+                    datos.
+                  </p>
+                </div>
+              </a>
             </div>
-            <div class="item">
-              <div class="filtro"></div>
-              <img src="../img/estructuras metalicas.jpg" alt="" />
-              <div class="info">
-                <p>Estructuras metálicas</p>
-                <a href="estructuras-metalicas.html">
-                  <img src="../icons/flecha-hexagono.svg" alt=""
-                /></a>
-              </div>
+            <div
+              class="item"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
+              <a href="estructuras-metalicas.html">
+                <div class="filtro"></div>
+                <img src="../img/estructuras metalicas.jpg" alt="" />
+                <div class="info">
+                  <p>
+                    Estructuras <br />
+                    metálicas
+                  </p>
+                </div>
+                <div class="pantalla-hover">
+                  <p>
+                    Estructuras <br />
+                    metálicas
+                  </p>
+                  <p>
+                    Ejecutamos tus proyectos mediante la fabricación y montaje
+                    de las estructuras metálicas que demanda la necesidad.
+                  </p>
+                </div>
+              </a>
             </div>
-            <div class="item">
-              <div class="filtro"></div>
-              <img src="../img/Instalaciones sanitarias.jpg" alt="" />
-              <div class="info">
-                <p>Instalaciones Sanitarias</p>
-                <a href="instalaciones-sanitarias.html">
-                  <img src="../icons/flecha-hexagono.svg" alt=""
-                /></a>
-              </div>
+            <div
+              class="item"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
+              <a href="instalaciones-sanitarias.html">
+                <div class="filtro"></div>
+                <img src="../img/Instalaciones sanitarias.jpg" alt="" />
+                <div class="info">
+                  <p>
+                    Instalaciones <br />
+                    Sanitarias
+                  </p>
+                </div>
+                <div class="pantalla-hover">
+                  <p>
+                    Instalaciones <br />
+                    Sanitarias
+                  </p>
+                  <p>
+                    Ejecutamos proyectos de distribución de redes de agua
+                    potable y desagüe para instalaciones industriales,
+                    comerciales y residenciales.
+                  </p>
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </section>
       <section class="contacto">
         <div class="container">
-          <div class="content">
+          <div
+            class="content"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-offset="0"
+          >
             <h2>Hagamos realidad tu proyecto ¡CONTÁCTANOS!</h2>
             <form
               id="fs-frm"
               name="complaint-form"
               accept-charset="utf-8"
-              action="php/thanks.php"
-              method="post"
+              action="thanks.html"
+              method=""
               class="formulario containerform"
             >
               <fieldset id="fs-frm-inputs">
@@ -363,18 +405,18 @@
                     required=""
                     class="form-input"
                   />
-                  <label for="form-nombre" class="form-label">Nombres:</label>
+                  <label for="full-name" class="form-label">Nombres:</label>
                 </div>
                 <div class="form-group">
                   <input
                     type="text"
                     name="name"
-                    id="full-name"
+                    id="last-name"
                     placeholder=""
                     required=""
                     class="form-input"
                   />
-                  <label for="form-nombre" class="form-label">Apellidos:</label>
+                  <label for="last-name" class="form-label">Apellidos:</label>
                 </div>
                 <div class="form-group">
                   <input
@@ -385,7 +427,7 @@
                     required=""
                     class="form-input"
                   />
-                  <label for="form-nombre" class="form-label">Teléfono:</label>
+                  <label for="telephone" class="form-label">Teléfono:</label>
                 </div>
                 <div class="form-group">
                   <input
@@ -396,7 +438,7 @@
                     required=""
                     class="form-input"
                   />
-                  <label for="form-nombre" class="form-label">Correo:</label>
+                  <label for="email" class="form-label">Correo:</label>
                 </div>
                 <div class="center">
                   <div class="enviar">
@@ -410,7 +452,12 @@
         </div>
       </section>
 
-      <section class="slider">
+      <section
+        class="slider"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-offset="0"
+      >
         <div class="marquee">
           <ul class="marquee-content">
             <li>- 8 años de experiencia en construcción e ingeniería civil</li>
@@ -423,16 +470,24 @@
       <div class="footer1">
         <div class="container">
           <div class="content">
-            <div class="text">
-              <p>Calle Abutillon 3889 urb. Las Palmeras - Los olivos</p>
-              <p>jbanda@consorciolamarsac.com</p>
-              <p>+51 954 910 703</p>
+            <div
+              class="text"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
+              <ul>
+                <li>Calle Abutillon 3889 urb. Las Palmeras - Los olivos</li>
+                <li>jbanda@consorciolamarsac.com</li>
+                <li>+51 954 910 703</li>
+              </ul>
             </div>
-            <div class="redes">
-              <a href="#"
-                ><img src="../icons/facebook.svg" alt="" />
-                <p>Facebook</p></a
-              >
+            <div
+              class="redes"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
               <a href="#"
                 ><img src="../icons/LinkedIn.svg" alt="" />
                 <p>LinkedIn</p></a
@@ -442,19 +497,30 @@
                 <p>Twitter</p></a
               >
             </div>
-            <div class="logo">
-              <img src="../img/logo-footer.png" alt="" />
+            <div
+              class="logo"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
+              <img src="../icons/logolamar-footer.svg" alt="" />
             </div>
           </div>
         </div>
       </div>
-      <div class="container">
+      <div
+        class="container"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-offset="0"
+      >
         <div class="pie">
           <p>2022 Todos lo derechos reservados</p>
           <p>Hecha con amor - NERD</p>
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
@@ -466,6 +532,15 @@
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
     <script type="text/javascript" src="../slick/slick.min.js"></script>
+    <script
+      defer=""
+      src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+    ></script>
+    <script src="../json/Flecha2.js"></script>
+    <script src="../json/Icon1-2.js"></script>
+    <script src="../json/Icon2-2.js"></script>
+    <script src="../json/Icon3-2.js"></script>
+    <script src="../json/experiencia.js"></script>
     <script src="../js/main.js"></script>
   </body>
 </html>

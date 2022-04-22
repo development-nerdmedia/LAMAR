@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
     <title>LAMAR - Nosotros</title>
   </head>
@@ -12,11 +16,12 @@
       <nav class="container">
         <div class="nav1">
           <div class="logo">
-            <a href="../index.html"><img src="../img/logo.png" alt="logo" /></a>
+            <a href="../index.html"
+              ><img src="../icons/logolamar.svg" alt=""
+            /></a>
           </div>
           <img class="icon-menu" src="../icons/menú.svg" alt="" />
           <div class="info">
-            <!-- <button class="contacto-page">Contáctenos</button> -->
             <a class="btncontacto" href="contacto.html"
               >Contáctenos<img src="../icons/flecha1.svg" alt=""
             /></a>
@@ -58,7 +63,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="Data-instalación-de-equipos-Aire-acondicionado.html"
+                  <a href="Data-instalación-de-equipos.html"
                     >Data instalación de equipos</a
                   >
                 </li>
@@ -81,112 +86,33 @@
       </nav>
     </header>
     <main>
-      <!-- modal contacto -->
-      <!-- <section class="contactopage">
-        <div class="container">
-          <div class="cerrar">
-            <button class="contacto-page">
-              <img src="../icons/hexagono-cruz.svg" alt="" />
-            </button>
-          </div>
-          <div class="content">
-            <div class="content-formulario">
-              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-              <form
-                id="fs-frm2"
-                name="complaint-form"
-                accept-charset="utf-8"
-                action="thanks.html"
-                method=""
-                class="formulario containerform"
-              >
-                <fieldset id="fs-frm-inputs2">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name="name"
-                      id="full-name"
-                      placeholder=""
-                      required=""
-                      class="form-input"
-                    />
-                    <label for="form-nombre" class="form-label"
-                      >Nombres y Apellidos:</label
-                    >
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder=""
-                      required=""
-                      class="form-input"
-                    />
-                    <label for="form-nombre" class="form-label">Correo:</label>
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name="asunto"
-                      id="asunto"
-                      placeholder=""
-                      required=""
-                      class="form-input"
-                    />
-                    <label for="form-nombre" class="form-label">Asunto:</label>
-                  </div>
-                  <div class="form-group textarea">
-                    <textarea
-                      rows="6"
-                      name="message"
-                      id="message"
-                      placeholder=""
-                      required=""
-                      class="form-input textarea"
-                    ></textarea>
-                    <label for="form-nombre" class="form-label">Mensaje:</label>
-                  </div>
-                  <div class="enviar">
-                    <input type="submit" value="Enviar" />
-                    <img src="../icons/flecha1.svg" alt="" />
-                  </div>
-                </fieldset>
-              </form>
-            </div>
-          </div>
-          <div class="pie">
-            <ul>
-              <li>Av.xxxxxxx .Lima, Perú</li>
-              <li>+01 5685967</li>
-              <li>Atención: L-V: 00:00</li>
-              <li>lamar@consorcio.pe</li>
-            </ul>
-          </div>
-        </div>
-      </section> -->
-      <!-- end modal contacto -->
+      <!-- loading page -->
+      <section class="loadingpage">
+        <div id="loading"></div>
+      </section>
+      <!-- end loading page -->
       <!-- modal menú -->
       <section class="menupage">
         <div class="container">
           <div class="cerrar">
-            <a href="../index.html"><img src="../img/logo.png" alt="" /></a>
+            <a href="../index.html"
+              ><img src="../icons/logolamar.svg" alt=""
+            /></a>
             <button class="icon-menu">
               <img src="../icons/hexagonorojo-cruz.svg" alt="" />
             </button>
           </div>
           <div class="content">
             <ul>
-              <li>
+              <li class="select">
                 <a href="quienes-somos.html">¿Quiénes somos?</a>
               </li>
               <li class="container-submenu">
                 <a href="servicios.html">Servicios</a
-                ><img
-                  class="submenu-btn"
-                  src="../icons/flecha-menu.svg"
-                  alt=""
-                />
+                ><span class="submenu-btn">
+                  <img src="../icons/flecha-menu.svg" alt="" />
+                  <img src="../icons/flecha-menu2.svg" alt="" />
+                </span>
                 <ul class="submenu-movil">
                   <li>
                     <a href="construccion-civil.html">Construcción Civil</a>
@@ -198,7 +124,7 @@
                   </li>
                   <li><a href="HVAC.html">HVAC</a></li>
                   <li>
-                    <a href="instalaciones-de-agua-y-contraincendio.html"
+                    <a href="Instalaciones-electricas.html"
                       >Instalaciones eléctricas</a
                     >
                   </li>
@@ -208,8 +134,7 @@
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="Data-instalación-de-equipos-Aire-acondicionado.html"
+                    <a href="Data-instalación-de-equipos.html"
                       >Data instalación de equipos</a
                     >
                   </li>
@@ -250,10 +175,20 @@
       <section class="text">
         <div class="container">
           <div class="content">
-            <div class="part1">
+            <div
+              class="part1"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
               <img src="../img/hombre3.png" alt="" />
             </div>
-            <div class="part2">
+            <div
+              class="part2"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
               <p>
                 Consorcio Lamar está sostenido por la puntualidad de sus
                 trabajos e innovación constante, lo que aunado a la eficiente
@@ -280,7 +215,12 @@
       <section class="info">
         <div class="content">
           <div class="text">
-            <div class="container">
+            <div
+              class="container"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
               <div class="mision">
                 <h2>Misión</h2>
                 <p>
@@ -298,36 +238,30 @@
               </div>
             </div>
           </div>
-          <div class="content-img">
+          <div class="content-img" data-aos="fade-left">
             <img src="../img/equipo.png" alt="" />
             <div class="filtro"></div>
             <img src="../img/nosotros11.png" alt="" />
           </div>
-          <!-- <div class="contenedor-img">
-            <span class="span1"></span>
-            <span class="span2"></span>
-            <img src="../img/nosotros1.png" alt="" />
-          </div> -->
         </div>
       </section>
       <section class="valores">
         <div class="content">
-          <div class="content-img">
+          <div class="content-img" data-aos="fade-right">
             <img src="../img/valores-img.png" alt="" />
             <div class="filtro"></div>
             <img src="../img/nosotros3.png" alt="" />
           </div>
-          <!-- <div class="contenedor-img">
-            <span class="span1"></span>
-            <span class="span2"></span>
-            <img src="../img/nosotros2-1.png" alt="" />
-          </div> -->
           <div class="text">
-            <div class="container">
+            <div
+              class="container"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
               <h2>Valores</h2>
               <div class="items-services">
                 <div class="item-services">
-                  <div class="barra"></div>
                   <div>
                     <img src="../icons/hexagono2.svg" alt="" />
                   </div>
@@ -341,7 +275,6 @@
                   </div>
                 </div>
                 <div class="item-services">
-                  <div class="barra"></div>
                   <div>
                     <img src="../icons/hexagono2.svg" alt="" />
                   </div>
@@ -355,7 +288,6 @@
                   </div>
                 </div>
                 <div class="item-services">
-                  <div class="barra"></div>
                   <div>
                     <img src="../icons/hexagono2.svg" alt="" />
                   </div>
@@ -368,18 +300,36 @@
                     </p>
                   </div>
                 </div>
+                <div class="item-services">
+                  <div>
+                    <img src="../icons/hexagono2.svg" alt="" />
+                  </div>
+                  <div>
+                    <h3>Puntualidad</h3>
+                    <p>
+                      En Consorcio Lamar trabajamos de manera responsable para
+                      cumplir con el lapso de tiempo acordado antes del inicio
+                      de la obra.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section class="history">
-        <div class="container">
-          <div class="content">
-            <div class="part1 historytext">
-              <h2>historia</h2>
-              <div class="content-text">
-                <div position="1" class="text active">
+        <div
+          class="container"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-offset="0"
+        >
+          <h2>historia</h2>
+          <div class="content-slider">
+            <div class="slider-history">
+              <div class="item">
+                <div class="text">
                   <p>
                     Consorcio Lamar fue fundado en el año 2010 y se constituyó
                     en el año 2013 bajo los estatus del Estado peruano.
@@ -389,81 +339,60 @@
                     proyectos de gran beneficio para nuestra sociedad.
                   </p>
                 </div>
-                <div position="2" class="text">
-                  <p>
-                    2012 Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit. Quis impedit atque dignissimos est odio neque! Dicta
-                    aut iusto et labore quae exercitationem
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Nihil numquam eum repellat a enim
-                  </p>
-                </div>
-                <div position="3" class="text">
-                  <p>
-                    2014 Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit. Quis impedit atque dignissimos est odio neque! Dicta
-                    aut iusto et labore quae exercitationem
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Nihil numquam eum repellat a enim
-                  </p>
+                <div class="años">
+                  <h3>2010</h3>
+                  <img src="../icons/hexagono3.svg" alt="" />
                 </div>
               </div>
-
-              <div class="buttonsHistory">
-                <button position="3" class="prev-buttonsHistory">
-                  <img src="../icons/btn-izquierda.svg" alt="" />
-                </button>
-                <button position="2" class="next-buttonsHistory">
-                  <img src="../icons/btn-derecha.svg" alt="" />
-                </button>
+              <div class="item">
+                <div class="text">
+                  <p>
+                    2012 Consorcio Lamar fue fundado en el año 2010 y se
+                    constituyó en el año 2013 bajo los estatus del Estado
+                    peruano.
+                  </p>
+                  <p>
+                    Desde entonces, empezamos nuestro recorrido elaborando
+                    proyectos de gran beneficio para nuestra sociedad.
+                  </p>
+                </div>
+                <div class="años">
+                  <div>
+                    <h3>2012</h3>
+                  </div>
+                  <img src="../icons/hexagono3.svg" alt="" />
+                </div>
               </div>
-              <!-- <div class="contenido-texto">
-                <p>
-                  Consorcio Lamar fue fundado en el año 2010 y se constituyó en
-                  el año 2013 bajo los estatus del Estado peruano.
-                </p>
-                <p>
-                  Desde entonces, empezamos nuestro recorrido elaborando
-                  proyectos de gran beneficio para nuestra sociedad.
-                </p>
-                <p>
-                  2012 Consorcio Lamar fue fundado en el año 2010 y se
-                  constituyó en el año 2013 bajo los estatus del Estado peruano.
-                </p>
-                <p>
-                  Desde entonces, empezamos nuestro recorrido elaborando
-                  proyectos de gran beneficio para nuestra sociedad.
-                </p>
-                <p>
-                  2014 Consorcio Lamar fue fundado en el año 2010 y se
-                  constituyó en el año 2013 bajo los estatus del Estado peruano.
-                </p>
-                <p>
-                  Desde entonces, empezamos nuestro recorrido elaborando
-                  proyectos de gran beneficio para nuestra sociedad.
-                </p>
-              </div> -->
+              <div class="item">
+                <div class="text">
+                  <p>
+                    2014 Consorcio Lamar fue fundado en el año 2010 y se
+                    constituyó en el año 2013 bajo los estatus del Estado
+                    peruano.
+                  </p>
+                  <p>
+                    Desde entonces, empezamos nuestro recorrido elaborando
+                    proyectos de gran beneficio para nuestra sociedad.
+                  </p>
+                </div>
+                <div class="años">
+                  <div>
+                    <h3>2014</h3>
+                  </div>
+                  <img src="../icons/hexagono3.svg" alt="" />
+                </div>
+              </div>
             </div>
-            <div class="part2">
-              <aside class="años">
-                <h3 position="1" class="active">2010</h3>
-                <h3 position="2">2012</h3>
-                <h3 position="3">2014</h3>
-                <img src="../icons/hexagono3.svg" alt="" />
-              </aside>
-              <!-- <div class="content-años">
-                <h3>2010</h3>
-                <img src="../icons/hexagono3.svg" alt="" />
-              </div> -->
-            </div>
+            <!-- <img src="../icons/hexagono3.svg" alt="" /> -->
           </div>
         </div>
       </section>
-      <section class="slider">
+      <section
+        class="slider"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-offset="0"
+      >
         <div class="marquee">
           <ul class="marquee-content">
             <li>- 8 años de experiencia en construcción e ingeniería civil</li>
@@ -476,16 +405,24 @@
       <div class="footer1">
         <div class="container">
           <div class="content">
-            <div class="text">
-              <p>Calle Abutillon 3889 urb. Las Palmeras - Los olivos</p>
-              <p>jbanda@consorciolamarsac.com</p>
-              <p>+51 954 910 703</p>
+            <div
+              class="text"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
+              <ul>
+                <li>Calle Abutillon 3889 urb. Las Palmeras - Los olivos</li>
+                <li>jbanda@consorciolamarsac.com</li>
+                <li>+51 954 910 703</li>
+              </ul>
             </div>
-            <div class="redes">
-              <a href="#"
-                ><img src="../icons/facebook.svg" alt="" />
-                <p>Facebook</p></a
-              >
+            <div
+              class="redes"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
               <a href="#"
                 ><img src="../icons/LinkedIn.svg" alt="" />
                 <p>LinkedIn</p></a
@@ -495,19 +432,30 @@
                 <p>Twitter</p></a
               >
             </div>
-            <div class="logo">
-              <img src="../img/logo-footer.png" alt="" />
+            <div
+              class="logo"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
+              <img src="../icons/logolamar-footer.svg" alt="" />
             </div>
           </div>
         </div>
       </div>
-      <div class="container">
+      <div
+        class="container"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-offset="0"
+      >
         <div class="pie">
           <p>2022 Todos lo derechos reservados</p>
           <p>Hecha con amor - NERD</p>
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
@@ -519,6 +467,15 @@
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
     <script type="text/javascript" src="../slick/slick.min.js"></script>
+    <script
+      defer=""
+      src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+    ></script>
+    <script src="../json/Flecha2.js"></script>
+    <script src="../json/Icon1-2.js"></script>
+    <script src="../json/Icon2-2.js"></script>
+    <script src="../json/Icon3-2.js"></script>
+    <script src="../json/experiencia.js"></script>
     <script src="../js/main.js"></script>
   </body>
 </html>

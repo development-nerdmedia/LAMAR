@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
     <title>LAMAR - PROYECTOS</title>
   </head>
@@ -12,11 +14,12 @@
       <nav class="container">
         <div class="nav1">
           <div class="logo">
-            <a href="../index.html"><img src="../img/logo.png" alt="logo" /></a>
+            <a href="../index.html"
+              ><img src="../icons/logolamar.svg" alt=""
+            /></a>
           </div>
           <img class="icon-menu" src="../icons/menú.svg" alt="" />
           <div class="info">
-            <!-- <button class="contacto-page">Contáctenos</button> -->
             <a class="btncontacto" href="contacto.html"
               >Contáctenos<img src="../icons/flecha1.svg" alt=""
             /></a>
@@ -58,7 +61,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="Data-instalación-de-equipos-Aire-acondicionado.html"
+                  <a href="Data-instalación-de-equipos.html"
                     >Data instalación de equipos</a
                   >
                 </li>
@@ -81,96 +84,18 @@
       </nav>
     </header>
     <main>
-      <!-- modal contacto -->
-      <!-- <section class="contactopage">
-        <div class="container">
-          <div class="cerrar">
-            <button class="contacto-page">
-              <img src="../icons/hexagono-cruz.svg" alt="" />
-            </button>
-          </div>
-          <div class="content">
-            <div class="content-formulario">
-              <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-              <form
-                id="fs-frm2"
-                name="complaint-form"
-                accept-charset="utf-8"
-                action="thanks.html"
-                method=""
-                class="formulario containerform"
-              >
-                <fieldset id="fs-frm-inputs2">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name="name"
-                      id="full-name"
-                      placeholder=""
-                      required=""
-                      class="form-input"
-                    />
-                    <label for="form-nombre" class="form-label"
-                      >Nombres y Apellidos:</label
-                    >
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder=""
-                      required=""
-                      class="form-input"
-                    />
-                    <label for="form-nombre" class="form-label">Correo:</label>
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name="asunto"
-                      id="asunto"
-                      placeholder=""
-                      required=""
-                      class="form-input"
-                    />
-                    <label for="form-nombre" class="form-label">Asunto:</label>
-                  </div>
-                  <div class="form-group textarea">
-                    <textarea
-                      rows="6"
-                      name="message"
-                      id="message"
-                      placeholder=""
-                      required=""
-                      class="form-input textarea"
-                    ></textarea>
-                    <label for="form-nombre" class="form-label">Mensaje:</label>
-                  </div>
-                  <div class="enviar">
-                    <input type="submit" value="Enviar" />
-                    <img src="../icons/flecha1.svg" alt="" />
-                  </div>
-                </fieldset>
-              </form>
-            </div>
-          </div>
-          <div class="pie">
-            <ul>
-              <li>Av.xxxxxxx .Lima, Perú</li>
-              <li>+01 5685967</li>
-              <li>Atención: L-V: 00:00</li>
-              <li>lamar@consorcio.pe</li>
-            </ul>
-          </div>
-        </div>
-      </section> -->
-      <!-- end modal contacto -->
+      <!-- loading page -->
+      <section class="loadingpage">
+        <div id="loading"></div>
+      </section>
+      <!-- end loading page -->
       <!-- modal menú -->
       <section class="menupage">
         <div class="container">
           <div class="cerrar">
-            <a href="../index.html"><img src="../img/logo.png" alt="" /></a>
+            <a href="../index.html"
+              ><img src="../icons/logolamar.svg" alt=""
+            /></a>
             <button class="icon-menu">
               <img src="../icons/hexagonorojo-cruz.svg" alt="" />
             </button>
@@ -182,11 +107,10 @@
               </li>
               <li class="container-submenu">
                 <a href="servicios.html">Servicios</a
-                ><img
-                  class="submenu-btn"
-                  src="../icons/flecha-menu.svg"
-                  alt=""
-                />
+                ><span class="submenu-btn">
+                  <img src="../icons/flecha-menu.svg" alt="" />
+                  <img src="../icons/flecha-menu2.svg" alt="" />
+                </span>
                 <ul class="submenu-movil">
                   <li>
                     <a href="construccion-civil.html">Construcción Civil</a>
@@ -198,7 +122,7 @@
                   </li>
                   <li><a href="HVAC.html">HVAC</a></li>
                   <li>
-                    <a href="instalaciones-de-agua-y-contraincendio.html"
+                    <a href="Instalaciones-electricas.html"
                       >Instalaciones eléctricas</a
                     >
                   </li>
@@ -208,8 +132,7 @@
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="Data-instalación-de-equipos-Aire-acondicionado.html"
+                    <a href="Data-instalación-de-equipos.html"
                       >Data instalación de equipos</a
                     >
                   </li>
@@ -225,7 +148,7 @@
                   </li>
                 </ul>
               </li>
-              <li><a href="proyectos.html">Proyectos</a></li>
+              <li class="select"><a href="proyectos.html">Proyectos</a></li>
               <li><a href="noticias.html">Noticias</a></li>
             </ul>
             <a class="contact" href="contacto.html">contáctanos</a>
@@ -246,16 +169,16 @@
             </div>
           </div>
         </div>
-        <!-- <div class="content-title-proyectos">
-          <div class="container">
-            <h1>NUESTROS PROYECTOS</h1>
-          </div>
-        </div> -->
       </section>
       <section class="portafolio">
         <div class="container">
           <div class="items">
-            <div class="item">
+            <div
+              class="item"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
               <a href="#">
                 <img src="../icons/hexagono-rojo-mas.svg" alt=""
               /></a>
@@ -265,12 +188,6 @@
                 <div class="img-hover">
                   <div class="pantalla1"></div>
                   <div class="pantalla2"></div>
-                  <!-- <div class="pantalla3">
-                    <div class="color1"></div>
-                    <div class="color2"></div>
-                  </div> -->
-                  <!-- <img src="../img/portafolio-item22.png" alt="" /> -->
-                  <!-- <div id="hover-animation"></div> -->
                   <lottie-player
                     src="../json/Proyecto 1 solo contenido.json"
                     background="transparent"
@@ -282,11 +199,16 @@
               </div>
               <div class="info">
                 <h4>Lima, Mayo 2020</h4>
-                <h3>PICKING CENTER</h3>
-                <p>Cisterna enterra.</p>
+                <h3>Picking Center Surquillo</h3>
+                <p>Cisterna enterrada.</p>
               </div>
             </div>
-            <div class="item">
+            <div
+              class="item"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
               <a href="#">
                 <img src="../icons/hexagono-rojo-mas.svg" alt=""
               /></a>
@@ -307,11 +229,16 @@
               </div>
               <div class="info">
                 <h4>Lima, Mayo 2020</h4>
-                <h3>Linio</h3>
-                <p>Mantenimiento.</p>
+                <h3>Almacén de Linio</h3>
+                <p>Mantenimiento de techos.</p>
               </div>
             </div>
-            <div class="item">
+            <div
+              class="item"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
               <a href="#">
                 <img src="../icons/hexagono-rojo-mas.svg" alt=""
               /></a>
@@ -332,11 +259,16 @@
               </div>
               <div class="info">
                 <h4>Lima, Mayo 2020</h4>
-                <h3>Superbodega UNO</h3>
-                <p>Construcción.</p>
+                <h3>Ate Kampu</h3>
+                <p>Superbodega.</p>
               </div>
             </div>
-            <div class="item">
+            <div
+              class="item"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
               <a href="#">
                 <img src="../icons/hexagono-rojo-mas.svg" alt=""
               /></a>
@@ -357,11 +289,16 @@
               </div>
               <div class="info">
                 <h4>Lima, Mayo 2020</h4>
-                <h3>SODIMAC</h3>
-                <p>Mantenimiento.</p>
+                <h3>SODIMAC BELLAVISTA</h3>
+                <p>Mantenimiento de pintura.</p>
               </div>
             </div>
-            <div class="item">
+            <div
+              class="item"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
               <a href="#">
                 <img src="../icons/hexagono-rojo-mas.svg" alt=""
               /></a>
@@ -383,10 +320,15 @@
               <div class="info">
                 <h4>Lima, Mayo 2020</h4>
                 <h3>VANGUARD</h3>
-                <p>Construcción.</p>
+                <p>Productos terminados. Mercado local.</p>
               </div>
             </div>
-            <div class="item">
+            <div
+              class="item"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
               <a href="#">
                 <img src="../icons/hexagono-rojo-mas.svg" alt=""
               /></a>
@@ -408,7 +350,7 @@
               <div class="info">
                 <h4>Lima, Mayo 2020</h4>
                 <h3>HIPERBODEGA UNO</h3>
-                <p>Desmontaje de totem</p>
+                <p>Desmontaje de totem.</p>
               </div>
             </div>
           </div>
@@ -419,7 +361,12 @@
       </section>
       <section class="contacto">
         <div class="container">
-          <div class="content">
+          <div
+            class="content"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-offset="0"
+          >
             <h2>Hagamos realidad tu proyecto ¡CONTÁCTANOS!</h2>
             <form
               id="fs-frm"
@@ -439,18 +386,18 @@
                     required=""
                     class="form-input"
                   />
-                  <label for="form-nombre" class="form-label">Nombres:</label>
+                  <label for="full-name" class="form-label">Nombres:</label>
                 </div>
                 <div class="form-group">
                   <input
                     type="text"
                     name="name"
-                    id="full-name"
+                    id="last-name"
                     placeholder=""
                     required=""
                     class="form-input"
                   />
-                  <label for="form-nombre" class="form-label">Apellidos:</label>
+                  <label for="last-name" class="form-label">Apellidos:</label>
                 </div>
                 <div class="form-group">
                   <input
@@ -461,7 +408,7 @@
                     required=""
                     class="form-input"
                   />
-                  <label for="form-nombre" class="form-label">Teléfono:</label>
+                  <label for="telephone" class="form-label">Teléfono:</label>
                 </div>
                 <div class="form-group">
                   <input
@@ -472,7 +419,7 @@
                     required=""
                     class="form-input"
                   />
-                  <label for="form-nombre" class="form-label">Correo:</label>
+                  <label for="email" class="form-label">Correo:</label>
                 </div>
                 <div class="center">
                   <div class="enviar">
@@ -486,7 +433,12 @@
         </div>
       </section>
 
-      <section class="slider">
+      <section
+        class="slider"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-offset="0"
+      >
         <div class="marquee">
           <ul class="marquee-content">
             <li>- 8 años de experiencia en construcción e ingeniería civil</li>
@@ -499,16 +451,24 @@
       <div class="footer1">
         <div class="container">
           <div class="content">
-            <div class="text">
-              <p>Calle Abutillon 3889 urb. Las Palmeras - Los olivos</p>
-              <p>jbanda@consorciolamarsac.com</p>
-              <p>+51 954 910 703</p>
+            <div
+              class="text"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
+              <ul>
+                <li>Calle Abutillon 3889 urb. Las Palmeras - Los olivos</li>
+                <li>jbanda@consorciolamarsac.com</li>
+                <li>+51 954 910 703</li>
+              </ul>
             </div>
-            <div class="redes">
-              <a href="#"
-                ><img src="../icons/facebook.svg" alt="" />
-                <p>Facebook</p></a
-              >
+            <div
+              class="redes"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
               <a href="#"
                 ><img src="../icons/LinkedIn.svg" alt="" />
                 <p>LinkedIn</p></a
@@ -518,19 +478,30 @@
                 <p>Twitter</p></a
               >
             </div>
-            <div class="logo">
-              <img src="../img/logo-footer.png" alt="" />
+            <div
+              class="logo"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-offset="0"
+            >
+              <img src="../icons/logolamar-footer.svg" alt="" />
             </div>
           </div>
         </div>
       </div>
-      <div class="container">
+      <div
+        class="container"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-offset="0"
+      >
         <div class="pie">
           <p>2022 Todos lo derechos reservados</p>
           <p>Hecha con amor - NERD</p>
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
@@ -546,7 +517,11 @@
       src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
     ></script>
     <script type="text/javascript" src="../slick/slick.min.js"></script>
-    <script src="../json/Proyecto 1 sin portada.js"></script>
+    <script src="../json/Flecha2.js"></script>
+    <script src="../json/Icon1-2.js"></script>
+    <script src="../json/Icon2-2.js"></script>
+    <script src="../json/Icon3-2.js"></script>
+    <script src="../json/experiencia.js"></script>
     <script src="../js/main.js"></script>
   </body>
 </html>

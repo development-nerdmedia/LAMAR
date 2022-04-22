@@ -3,12 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png" />
+    <meta name="format-detection" content="telephone=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
     <title>Contacto</title>
   </head>
   <body>
     <main>
+      <!-- loading page -->
+      <section class="loadingpage">
+        <div id="loading"></div>
+      </section>
+      <!-- end loading page -->
       <section class="contactopage">
         <div class="container">
           <div class="cerrar">
@@ -37,7 +44,7 @@
                       required=""
                       class="form-input"
                     />
-                    <label for="form-nombre" class="form-label"
+                    <label for="full-name" class="form-label"
                       >Nombres y Apellidos:</label
                     >
                   </div>
@@ -50,7 +57,7 @@
                       required=""
                       class="form-input"
                     />
-                    <label for="form-nombre" class="form-label">Correo:</label>
+                    <label for="email" class="form-label">Correo:</label>
                   </div>
                   <div class="form-group">
                     <input
@@ -61,7 +68,7 @@
                       required=""
                       class="form-input"
                     />
-                    <label for="form-nombre" class="form-label">Asunto:</label>
+                    <label for="asunto" class="form-label">Asunto:</label>
                   </div>
                   <div class="form-group textarea">
                     <textarea
@@ -72,7 +79,7 @@
                       required=""
                       class="form-input textarea"
                     ></textarea>
-                    <label for="form-nombre" class="form-label">Mensaje:</label>
+                    <label for="message" class="form-label">Mensaje:</label>
                   </div>
                   <div class="enviar">
                     <input type="submit" value="Enviar" />
@@ -83,17 +90,36 @@
             </div>
           </div>
           <div class="pie">
-            <!-- <div class="container"> -->
             <ul>
               <li>Calle Abutillon 3889 urb. Las Palmeras - Los olivos</li>
               <li>+51 954 910 703</li>
-              <!-- <li>Atención: L-V: 00:00</li> -->
               <li>jbanda@consorciolamarsac.com</li>
             </ul>
-            <!-- </div> -->
           </div>
         </div>
       </section>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script src="../js/gsap.min.js"></script>
+    <script src="../js/ScrollTrigger.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
+    <script
+      defer=""
+      src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+    ></script>
+    <script src="../json/Flecha2.js"></script>
+    <script src="../json/Icon1-2.js"></script>
+    <script src="../json/Icon2-2.js"></script>
+    <script src="../json/Icon3-2.js"></script>
+    <script src="../json/experiencia.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>
