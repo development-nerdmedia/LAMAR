@@ -208,7 +208,7 @@ header.sticky2 {
     padding-bottom: 0; }
 
 header.sticky nav .nav1 .info a.btncontacto::before {
-  border-bottom: 10px solid var(--color-oscuro); }
+  border-bottom: 10px solid #374753; }
 
 header.sticky::before {
   transform: translateY(0%); }
